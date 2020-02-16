@@ -12,7 +12,7 @@
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:12101]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Tooa/rhasspy-unraid/master/templates/rhasspy.xml</TemplateURL>
-  <Icon></Icon>
+  <Icon>https://raw.githubusercontent.com/synesthesiam/rhasspy/master/docs/img/favicon.png</Icon>
   <PostArgs>--user-profiles /profiles --profile de</PostArgs>
   <Description></Description>
   <Networking>
