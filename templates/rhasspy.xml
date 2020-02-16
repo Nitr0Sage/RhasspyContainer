@@ -42,6 +42,6 @@
   <Labels/>
   <Config Name="Port" Target="12101" Default="12101" Mode="tcp" Description="Container Port: 12101" Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Port" Target="12333" Default="12333" Mode="udp" Description="Container Port: 12333" Type="Port" Display="always" Required="false" Mask="false"/>
-  <Config Name="Export" Target="/profiles" Default="" Mode="rw" Description="Container Path: /profiles . &#13;&#10;Location for profiles" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Profiles" Target="/profiles" Default="" Mode="rw" Description="Container Path: /profiles . &#13;&#10;Location for profiles" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="PUID" Target="USERMAP_UID" Default="99" Mode="" Description="Container Variable: USERMAP_UID" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
