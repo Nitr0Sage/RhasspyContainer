@@ -12,7 +12,7 @@
   <Category>Network:</Category>
   <WebUI>http://[IP]:[PORT:8432]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Tooa/unraid-docker-hosting/master/templates/mediabox-webdav.xml</TemplateURL>
-  <Icon>https://github.com/Tooa/unraid-docker-hosting/blob/master/templates/img/mediabox-webdav.png</Icon>
+  <Icon>https://github.com/Tooa/unraid-docker-hosting/raw/master/templates/img/mediabox-webdav.png</Icon>
   <PostArgs></PostArgs>
   <Config Name="Port" Target="80" Default="8432" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Data" Target="/var/lib/dav" Default="/mnt/user/appdata/mediabox-webdav/" Mode="rw" Description="Container Path: /var/lib/dav . &#13;&#10;" Type="Path" Display="always" Required="true" Mask="false"/>
