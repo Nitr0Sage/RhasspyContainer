@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>webdav</Name>
+  <Name>mediabox-webdav</Name>
   <Repository>bytemark/webdav</Repository>
   <Registry>https://hub.docker.com/r/bytemark/webdav/</Registry>
   <Network>bridge</Network>
@@ -11,15 +11,13 @@
   <Overview>This image runs an easily configurable WebDAV server with Apache.</Overview>
   <Category>Network:</Category>
   <WebUI>http://[IP]:[PORT:8432]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Tooa/unraid-docker-hosting/master/templates/webdav.xml</TemplateURL>
-  <Icon></Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Tooa/unraid-docker-hosting/master/templates/mediabox-webdav.xml</TemplateURL>
+  <Icon>https://github.com/Tooa/unraid-docker-hosting/blob/master/templates/img/mediabox-webdav.png</Icon>
   <PostArgs></PostArgs>
   <Config Name="Port" Target="80" Default="8432" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false"/>
-  <Config Name="Data" Target="/var/lib/dav" Default="/mnt/user/appdata/webdav/data" Mode="rw" Description="Container Path: /var/lib/dav . &#13;&#10;" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data" Target="/var/lib/dav" Default="/mnt/user/appdata/mediabox-webdav/" Mode="rw" Description="Container Path: /var/lib/dav . &#13;&#10;" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="USERNAME" Target="USERNAME" Default="" Mode="" Description="Container Variable: USERNAME . &#13;&#10; Authenticate with this username (and the password below). This is ignored if you bind mount your own authentication file to /user.passwd" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="Container Variable: PASSWORD . &#13;&#10; Authenticate with this password (and the username above). This is ignored if you bind mount your own authentication file to /user.passwd" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="AUTH_TYPE" Target="AUTH_TYPE" Default="Digest" Mode="" Description="Container Variable: AUTH_TYPE . &#13;&#10; Apache authentication type to use. This can be Basic (best choice for HTTPS) or Digest (best choice for HTTP). The default is Basic" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="LOCATION" Target="LOCATION" Default="/webdav" Mode="" Description="Container Variable: LOCATION. &#13;&#10;  The URL path for WebDAV (eg, if set to /webdav then clients should connect to example.com/webdav). The default is /" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="PUID" Target="USERMAP_UID" Default="99" Mode="" Description="Container Variable: USERMAP_UID" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="PGID" Target="USERMAP_GID" Default="100" Mode="" Description="Container Variable: USERMAP_GID" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
