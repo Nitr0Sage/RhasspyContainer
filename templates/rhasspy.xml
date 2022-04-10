@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>rhasspy</Name>
   <Repository>synesthesiam/rhasspy-server</Repository>
-  <Registry>https://hub.docker.com/r/synesthesiam/rhasspy-server/</Registry>
+  <Registry>https://hub.docker.com/r/rhasspy/rhasspy</Registry>
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
